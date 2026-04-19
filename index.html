@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>The Points Challenge – Full Game</title>
+<link rel="stylesheet" href="styles.css">
+></head>
+<body>
+
+<div class="clouds-container" id="cloudsContainer"></div>
+
+<!-- SCREEN 1: START -->
+<div id="startScreen" class="screen-card">
+  <h1>The Points Challenge</h1>
+  <div class="subtitle">Compete. Collect. Conquer.</div>
+  <button id="startBtn" class="pixel-btn">Start</button>
+</div>
+
+<!-- SCREEN 2: CHARACTER -->
+<div id="charScreen" class="screen-card hidden">
+  <h1>Choose Your Character</h1>
+  <div class="avatar-grid" id="avatarGrid"></div>
+  <input type="text" id="nicknameInput" class="nickname-input" placeholder="Enter username" maxlength="20">
+  <div id="charError" style="color:#e74c3c; font-size:0.75rem; min-height:20px;"></div>
+  <button id="confirmCharBtn" class="pixel-btn">Let's go!</button>
+</div>
+
+<!-- GAME CONTAINER -->
+<div id="gameplayContainer" class="hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
